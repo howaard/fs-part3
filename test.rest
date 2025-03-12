@@ -1,9 +1,17 @@
-DELETE http://localhost:3001/api/persons/32
+DELETE http://localhost:3001/api/persons/67d0f5ee04c4f7b9400ff928
 
 ###
 GET http://localhost:3001/api/persons/
 ###
 POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "howard",
+    "number": "12345"
+}
+###
+POST https://fs-part3-kkum.onrender.com/api/persons HTTP/1.1
 content-type: application/json
 
 {
